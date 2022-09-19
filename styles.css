@@ -15,38 +15,26 @@
   }
   
   body {
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
   }
   
   a,
   a:visited {
     text-decoration: none;
-    color: var(--white);
+    color: black;
   }
   
   .toolbar {
     display: flex;
     align-items: center;
-    background-color: var(--primary);
+    justify-content: flex-end;
     height: 48px;
-  }
-  
-  .name {
-    text-decoration: none;
-    width: 77px;
-    height: 24px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--white);
-    margin-left: 24px;
-    flex: 2;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
   }
   
   .menu-btn {
     display: none;
+
   }
   
   .navigation-btn:visited {
@@ -56,117 +44,79 @@
   .opened-menu {
     display: none;
     flex-direction: column;
-    background-color: var(--primary);
+    background-color: white;
   }
   
   .close-menu {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--primary);
-    float: right;
+    background-color: white;
+    margin-top: 1rem;
+    margin-right: 1rem;
     border: none;
   }
   
   .position-btn {
     display: flex;
-    justify-content: end;
-    padding-top: 60px;
-    padding-right: 40px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
   }
   
   .content-menu {
+    font-family: 'Open Sans', sans-serif;
     padding: 24px;
-    font-family: "Inter", sans-serif;
-    font-size: 32px;
-    font-weight: 700px;
+    font-size: 2rem;
     line-height: 44px;
+    font-weight: 100;
     margin: 0;
     width: 100vw;
     height: 100vh;
     list-style: none;
-    background-color: var(--primary);
+    background-color: white;
   }
   
   .openmenu-items {
     padding: 15px;
     border-bottom: 1px solid var(--disabledText);
+    color: rgb(44, 44, 44);
   }
-  
-  .openmenu-items a {
-    text-decoration: none;
-    color: var(--white);
-  }
-  
+    
   .toolbar-btn {
-    background-color: var(--primary);
     border: none;
-    margin-right: 32px;
+    background-color: white;
+    margin-right: 1rem;
   }
   
-  .headline {
-    width: 100%;
-    background-image: url(Assets/Illustration.png);
-    background-repeat: no-repeat;
-    background-position: right bottom -45px;
-    background-color: var(--dark);
+  .primary {
     display: flex;
     flex-direction: column;
-    padding: 120px 24px;
-    gap: 12px;
-    height: 590px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
-  
+
   .primary-text {
-    font-family: "Crete Round", serif;
-    margin: 0;
-    width: 327px;
-    height: 124px;
-    font-weight: 400;
-    font-size: 56px;
+    font-size: 3.2rem;
     line-height: 64px;
     letter-spacing: 0.37px;
-    color: var(--orange);
+    margin: 3rem 0 0 0;
   }
   
   .support-text {
-    width: 327px;
-    height: 27px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 24px;
+    font-size: 1.3rem;
     line-height: 32px;
-    display: flex;
-    align-items: center;
-    color: var(--white);
   }
-  
-  .description {
-    width: 327px;
-    height: 123px;
-    margin: 0;
-    font-weight: 400;
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    line-height: 24px;
-    color: var(--white);
-  }
-  
+    
   .works {
     display: flex;
-    background-color: var(--white);
     flex-direction: column;
     align-items: center;
     padding: 120px 0;
   }
   
-  .works-title {
-    border-bottom: 1px solid #212121;
-    width: 327px;
-    height: 83px;
-    font-family: "Crete Round", serif;
-    font-size: 40px;
-    line-height: 52px;
-    font-weight: 400;
+  .works-title {    
+    font-size: 1.3rem;
   }
   
   .line {
@@ -189,7 +139,6 @@
   }
   
   .popup-header {
-    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
@@ -201,7 +150,6 @@
     list-style: none;
     padding: 0 0 30px 0;
     justify-content: start;
-    font-family: "Poppins", serif;
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
@@ -218,7 +166,6 @@
   }
   
   .popup-text {
-    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -233,7 +180,6 @@
     background-color: var(--orange);
     border: none;
     color: var(--white);
-    font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
@@ -275,7 +221,6 @@
   .title-post {
     padding: 0 16px;
     margin-bottom: 0;
-    font-family: "Crete Round", serif;
     font-weight: 400;
     font-size: 32px;
     line-height: 44px;
@@ -286,7 +231,6 @@
   .title-post-text {
     padding: 0 16px;
     margin-bottom: 30px;
-    font-family: "Inter", sans-serif;
     color: var(--white);
     font-weight: 400;
     font-size: 16px;
@@ -295,7 +239,6 @@
   }
   
   .action {
-    font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 17px;
     letter-spacing: 0.06rem;
@@ -324,7 +267,6 @@
     height: 40px;
     align-items: center;
     color: var(--white);
-    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -337,7 +279,6 @@
     color: var(--white);
     width: 161px;
     height: 48px;
-    font-family: "Inter", serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
@@ -368,7 +309,6 @@
   }
   
   .aboutme-title {
-    font-family: "Crete Round", sans-serif;
     font-weight: 400;
     font-size: 72px;
     line-height: 88px;
@@ -380,7 +320,6 @@
   
   .aboutme-text {
     margin: 0 0 24px 0;
-    font-family: "Inter", serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -426,7 +365,6 @@
   }
   
   .error-msg {
-    font-family: 'roboto', sans-serif;
     font-weight: 600;
     font-size: 1.1rem;
     color: red;
@@ -439,7 +377,6 @@
   
   .skill-name {
     margin-left: 12px;
-    font-family: "Crete Round", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -454,7 +391,6 @@
     flex-direction: column;
     align-items: center;
     color: var(--white);
-    font-family: "Inter", serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 43px;
@@ -473,7 +409,6 @@
     align-items: center;
     padding: 0;
     gap: 24px;
-    font-family: "Inter", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -495,7 +430,6 @@
     padding: 10px;
     border: none;
     border-bottom: 1px solid #dbd8d7;
-    font-family: "Inter", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -521,7 +455,8 @@
   
   @media screen and (min-device-width: 768px) {
     .name {
-      font-size: 20px;
+      font-size: 1.3rem;
+      margin-left: 3rem;
     }
   
     .toolbar-btn {
@@ -536,10 +471,9 @@
       align-items: center;
       display: flex;
       list-style: none;
-      gap: 10px;
-      margin-right: 142px;
+      gap: 1rem;
+      margin-right: 9rem;
       color: var(--white);
-      font-family: "Inter", serif;
       font-weight: 600;
       font-size: 15px;
       line-height: 20px;
@@ -554,7 +488,12 @@
     }
   
     .primary {
-      order: 1;
+      display: flex;
+      margin: auto;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   
     .support-text {
@@ -567,7 +506,6 @@
     .description {
       width: 400px;
       font-size: 20px;
-      font-family: "Inter", serif;
       line-height: 32px;
     }
   
@@ -718,10 +656,6 @@
   
     .division {
       margin-bottom: 20px;
-    }
-  
-    .skill-name {
-      font-family: "Inter", serif;
     }
   
     .child-ul {
