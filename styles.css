@@ -29,12 +29,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-right: 1rem;
     height: 48px;
   }
   
   .menu-btn {
     display: none;
-
   }
   
   .navigation-btn:visited {
@@ -107,7 +107,11 @@
     font-size: 1.3rem;
     line-height: 32px;
   }
-    
+  
+  .first-image {
+    width: 100vw;
+  }
+
   .works {
     display: flex;
     flex-direction: column;
@@ -194,6 +198,10 @@
     float: right;
     border: none;
     background-color: var(--white);
+  }
+
+  .main-container {
+    display: static;
   }
   
   .frames {
